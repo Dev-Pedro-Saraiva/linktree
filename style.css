@@ -1,0 +1,123 @@
+:root {
+  font-size: 62,5%;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  animation: downtop 700ms;
+}
+
+body {
+  background-color: #9BA986;
+}
+header{
+  text-align: center;
+}
+h1 {
+  margin-bottom: 12px;
+  font-family: 'Roboto', sem serifa;
+  font-weight: bolder;
+  font-size: 48px;
+   background: linear-gradient(
+    270deg, #ffffff, #8b683f9f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    user-select: none;
+}
+
+.colorH1 {
+  color: #6d6051;
+
+}
+
+.blink{
+  -webkit-animation-name: blinker;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(.5, 0, 1, 1);
+  -webkit-animation-duration: 1.6s;
+}
+
+p{
+    -webkit-animation-name: blinker;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(.5, 0, 1, 1);
+  -webkit-animation-duration: 1.6s;
+  font-size: 19px;
+  color: #f1e4d4;
+  margin-bottom: 20px;
+  font-family: 'Source Sans Pro', sem serifa;
+}
+main {
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  gap: 22px;
+  margin-bottom: 30px;
+}
+
+button{
+  color: #f8d9b6;
+  background-color: #8a8369;
+  width: 176px;
+  height: 45px;
+  border-radius: 199px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #f8d9b6;
+  color: #8a8369;
+  width: 196px ;
+  height: 48px ;
+}
+
+.footer {
+  justify-content: center;
+  display: flex;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 38px;
+}
+
+a {
+  text-decoration: none;
+}
+
+svg{
+  width: 40px;
+  height: 40px;
+  transition: 5ms;
+  fill:#f8d9b6;
+}
+
+svg:hover {
+  cursor:pointer;
+  width: 55px;
+  height: 55px;
+  transition: 5ms;
+  fill: #a78f74;
+}
+
+
+@-webkit-keyframes blinker {
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+
+@keyframes downtop {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
